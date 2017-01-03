@@ -6,11 +6,25 @@
         xmlns:local="clr-namespace:GorselProgramlama2ProjeOdevi"
         mc:Ignorable="d"
         Title="MainWindow" Height="650" Width="600">
+    <Window.Resources>
+        <XmlDataProvider x:Key="rssData" XPath="//item" Source="http://aa.com.tr/tr/rss/default?cat=guncel"></XmlDataProvider>
+    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="0*"/>
-            <RowDefinition/>
+            <RowDefinition Height="60*"></RowDefinition>
+            <RowDefinition Height="500*"></RowDefinition>
+            <RowDefinition Height="100*"></RowDefinition>
         </Grid.RowDefinitions>
-        <Image x:Name="EkranLogoo_fw_png" Margin="0,0,0,559" Grid.RowSpan="2" Source="EkranLogoo.fw.png" Stretch="Fill"/>
+        <Image Grid.Row="0" x:Name="EkranLogoo_fw_png" Margin="0,0,0,5" Source="EkranLogoo.fw.png" Stretch="Fill"/>
+        <ListBox Name="ls1" ItemsSource="{Binding Source={StaticResource rssData}}" Margin="0,50,0,6" Grid.RowSpan="2">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Width="60" Height="60" Source="{Binding XPath=image}"></Image>
+                        <TextBlock Text="{Binding XPath=title}" FontWeight="Bold"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 </Window>
