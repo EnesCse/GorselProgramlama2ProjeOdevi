@@ -26,5 +26,8 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
+        <StackPanel DataContext="{Binding ElementName=ls1, Path=SelectedItem}" Grid.Row="2"  >
+            <TextBlock Text="{Binding XPath=pubDate}" Height="17" ></TextBlock>
+        </StackPanel>
     </Grid>
 </Window>
