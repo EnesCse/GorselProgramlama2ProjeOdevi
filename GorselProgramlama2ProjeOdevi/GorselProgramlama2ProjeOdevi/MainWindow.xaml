@@ -9,13 +9,13 @@
     <Window.Resources>
         <XmlDataProvider x:Key="rssData" XPath="//item" Source="http://aa.com.tr/tr/rss/default?cat=guncel"></XmlDataProvider>
     </Window.Resources>
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="60*"></RowDefinition>
+    <Grid x:Name="Habere_Git">
+        <Grid.RowDefinitions >
+            <RowDefinition Height="60*" ></RowDefinition>
             <RowDefinition Height="500*"></RowDefinition>
             <RowDefinition Height="40*"></RowDefinition>
             <RowDefinition Height="40*"></RowDefinition>
-            <RowDefinition Height="20*"></RowDefinition>
+            <RowDefinition Height="20*" ></RowDefinition>
         </Grid.RowDefinitions>
         <Image Grid.Row="0" x:Name="EkranLogoo_fw_png" Margin="0,0,0,5" Source="EkranLogoo.fw.png" Stretch="Fill"/>
         <ListBox Name="ls1" ItemsSource="{Binding Source={StaticResource rssData}}" Margin="0,50,0,6" Grid.RowSpan="2">
@@ -32,9 +32,13 @@
             <TextBlock Text="{Binding XPath=pubDate}" Height="17" ></TextBlock>
         </StackPanel>
         <ListBox Height="40" Grid.Row="3">
-        <StackPanel DataContext="{Binding ElementName=ls1, Path=SelectedItem}" Grid.Row="3"  >
-            <TextBlock Text="{Binding XPath=description}" Height="17" ></TextBlock>
-        </StackPanel>
-</ListBox>
+            <StackPanel DataContext="{Binding ElementName=ls1, Path=SelectedItem}" Grid.Row="3"  >
+                <TextBlock Text="{Binding XPath=description}" Height="17" ></TextBlock>
+            </StackPanel>
+        </ListBox>
+        <StackPanel Orientation="Vertical" DataContext="{Binding ElementName=ls1, Path=SelectedItem}" Grid.Row="4">
+            <TextBlock Background="#00447C"  TextAlignment="Center">
+            <Hyperlink Name="git" Tag="{Binding InnerText, XPath=link}" Click="git_Click" Foreground="White" FontWeight="Bold" FontStyle="Normal" FontSize="14" >Habere Git</Hyperlink>
+        </TextBlock></StackPanel>
     </Grid>
 </Window>
