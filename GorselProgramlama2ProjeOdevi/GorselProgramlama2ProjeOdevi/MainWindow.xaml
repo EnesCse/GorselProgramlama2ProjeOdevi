@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GorselProgramlama2ProjeOdevi"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="650" Width="600">
     <Grid>
-        <Label>dgfdgfdgfdgdsgdsgdsgdsgsdgsgsdgsf</Label>
+       
         
     </Grid>
 </Window>
