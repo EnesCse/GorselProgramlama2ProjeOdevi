@@ -7,7 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="650" Width="600">
     <Grid>
-       
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Image x:Name="EkranLogoo_fw_png" Margin="0,0,0,559" Grid.RowSpan="2" Source="EkranLogoo.fw.png" Stretch="Fill"/>
     </Grid>
 </Window>
