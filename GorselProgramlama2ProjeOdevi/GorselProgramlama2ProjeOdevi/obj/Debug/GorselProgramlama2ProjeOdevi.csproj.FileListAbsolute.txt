@@ -12,3 +12,9 @@ C:\Users\yasemin\Source\Repos\GorselProgramlama2ProjeOdevi\GorselProgramlama2Pro
 C:\Users\yasemin\Source\Repos\GorselProgramlama2ProjeOdevi\GorselProgramlama2ProjeOdevi\GorselProgramlama2ProjeOdevi\obj\Debug\GorselProgramlama2ProjeOdevi.csproj.GenerateResource.Cache
 C:\Users\yasemin\Source\Repos\GorselProgramlama2ProjeOdevi\GorselProgramlama2ProjeOdevi\GorselProgramlama2ProjeOdevi\obj\Debug\GorselProgramlama2ProjeOdevi.exe
 C:\Users\yasemin\Source\Repos\GorselProgramlama2ProjeOdevi\GorselProgramlama2ProjeOdevi\GorselProgramlama2ProjeOdevi\obj\Debug\GorselProgramlama2ProjeOdevi.pdb
+C:\Users\yasemin\Source\Repos\GorselProgramlama2ProjeOdevi\GorselProgramlama2ProjeOdevi\GorselProgramlama2ProjeOdevi\obj\Debug\dunya.g.cs
+C:\Users\yasemin\Source\Repos\GorselProgramlama2ProjeOdevi\GorselProgramlama2ProjeOdevi\GorselProgramlama2ProjeOdevi\obj\Debug\dunya.baml
+C:\Users\yasemin\Source\Repos\GorselProgramlama2ProjeOdevi\GorselProgramlama2ProjeOdevi\GorselProgramlama2ProjeOdevi\obj\Debug\spor.g.cs
+C:\Users\yasemin\Source\Repos\GorselProgramlama2ProjeOdevi\GorselProgramlama2ProjeOdevi\GorselProgramlama2ProjeOdevi\obj\Debug\spor.baml
+C:\Users\yasemin\Source\Repos\GorselProgramlama2ProjeOdevi\GorselProgramlama2ProjeOdevi\GorselProgramlama2ProjeOdevi\obj\Debug\guncel.g.cs
+C:\Users\yasemin\Source\Repos\GorselProgramlama2ProjeOdevi\GorselProgramlama2ProjeOdevi\GorselProgramlama2ProjeOdevi\obj\Debug\guncel.baml
