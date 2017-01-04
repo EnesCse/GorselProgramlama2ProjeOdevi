@@ -18,7 +18,7 @@
             <RowDefinition Height="25*"></RowDefinition>
             <RowDefinition Height="25*"></RowDefinition>
             <RowDefinition Height="35*"></RowDefinition>
-            <RowDefinition Height="20*" ></RowDefinition>
+            <RowDefinition Height="25*" ></RowDefinition>
         </Grid.RowDefinitions>
         <Image Grid.Row="0" x:Name="EkranLogoo_fw_png"  Margin="0,0,0,5" Source="EkranLogoo.fw.png" Stretch="Fill"/>
         <Button Background="#A8A8B7" Click="Button_Click_1" Margin="511,0,24,27" Foreground="Red" FontWeight="ExtraBold" BorderBrush="Black">Kapat</Button>
@@ -44,7 +44,7 @@
         </ListBox>
         <StackPanel Orientation="Vertical" DataContext="{Binding ElementName=ls1, Path=SelectedItem}" Grid.Row="6">
             <TextBlock Background="#00447C"  TextAlignment="Center">
-            <Hyperlink Name="git" Tag="{Binding InnerText, XPath=link}" Click="git_Click" Foreground="White" FontWeight="Bold" FontStyle="Normal" FontSize="14" >Habere Git</Hyperlink>
+            <Hyperlink Name="git"  Tag="{Binding InnerText, XPath=link}" Click="git_Click" Foreground="White" FontWeight="Bold" FontStyle="Normal" FontSize="14" >Habere Git</Hyperlink>
             </TextBlock>
         </StackPanel>
 
