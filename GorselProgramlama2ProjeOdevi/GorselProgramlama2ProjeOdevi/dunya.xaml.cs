@@ -39,6 +39,9 @@ namespace GorselProgramlama2ProjeOdevi
             Process.Start(path);
         }
 
-       
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }

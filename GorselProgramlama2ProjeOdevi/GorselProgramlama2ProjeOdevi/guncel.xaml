@@ -24,7 +24,7 @@
                 <RowDefinition Height="61*" ></RowDefinition>
             </Grid.RowDefinitions>
             <Image Grid.Row="0" x:Name="EkranLogoo_fw_png" Source="EkranLogoo.fw.png" Stretch="Fill" Height="50" VerticalAlignment="Top"/>
-
+            <Button Background="#A8A8B7" Height="30" Click="Button_Click" Margin="511,0,39,28" Foreground="Red" FontWeight="ExtraBold" BorderBrush="Black">Kapat</Button>
             <ListBox Name="ls1" ItemsSource="{Binding Source={StaticResource rssData}}" Margin="0,46,0,5" Background="#A8A8B7" Grid.Row="1" HorizontalAlignment="Left" Width="589" >
                 <ListBox.ItemTemplate>
                     <DataTemplate>

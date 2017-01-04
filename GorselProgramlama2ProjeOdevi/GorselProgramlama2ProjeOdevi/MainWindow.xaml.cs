@@ -25,9 +25,7 @@ namespace GorselProgramlama2ProjeOdevi
         {
             string path = (sender as Hyperlink).Tag as string;
             Process.Start(path);
-        }
-
-     
+        }    
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
@@ -50,6 +48,9 @@ namespace GorselProgramlama2ProjeOdevi
             this.DataContext = veri;
         }
 
-        
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

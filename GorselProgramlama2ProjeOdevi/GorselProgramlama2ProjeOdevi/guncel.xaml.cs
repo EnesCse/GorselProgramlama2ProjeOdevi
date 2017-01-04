@@ -31,5 +31,11 @@ namespace GorselProgramlama2ProjeOdevi
             string path = (sender as Hyperlink).Tag as string;
             Process.Start(path);
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
     }
 }

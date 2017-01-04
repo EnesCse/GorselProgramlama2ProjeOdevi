@@ -4,14 +4,13 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GorselProgramlama2ProjeOdevi"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="670" Width="600" Background="#A8A8B7">
-    
+        mc:Ignorable="d" WindowStyle="None" 
+        Title="MainWindow" Height="670" Width="600" Background="#A8A8B7" >
+
     <Window.Resources>
         <XmlDataProvider x:Key="rssData" XPath="//item" Source="http://aa.com.tr/tr/rss/default?cat=guncel"></XmlDataProvider>
     </Window.Resources>
     <Grid x:Name="Habere_Git">
-   
         <Grid.RowDefinitions >
             <RowDefinition Height="60*" ></RowDefinition>
             <RowDefinition Height="500*"></RowDefinition>
@@ -22,7 +21,7 @@
             <RowDefinition Height="20*" ></RowDefinition>
         </Grid.RowDefinitions>
         <Image Grid.Row="0" x:Name="EkranLogoo_fw_png"  Margin="0,0,0,5" Source="EkranLogoo.fw.png" Stretch="Fill"/>
-       
+        <Button Background="#A8A8B7" Click="Button_Click_1" Margin="511,0,24,27" Foreground="Red" FontWeight="ExtraBold" BorderBrush="Black">Kapat</Button>
         <ListBox Name="ls1" ItemsSource="{Binding Source={StaticResource rssData}}"  Margin="0,50,0,6" Grid.RowSpan="2" Background="#A8A8B7" Grid.Row="1">
             <ListBox.ItemTemplate>
                 <DataTemplate>
@@ -50,10 +49,10 @@
         </StackPanel>
 
 
-        <Frame  Source="{Binding adres}"  Name="fr1" JournalOwnership="OwnsJournal" NavigationUIVisibility="Hidden" HorizontalAlignment="Left" Height="670" Grid.RowSpan="7" VerticalAlignment="Top" Width="600" Margin="0,0,-8,-30">  </Frame>
+        <Frame  Source="{Binding adres}"  Name="fr1" JournalOwnership="OwnsJournal" NavigationUIVisibility="Hidden" HorizontalAlignment="Left" Height="670" Grid.RowSpan="7" VerticalAlignment="Top" Width="600" Margin="0,0,-8,-30"></Frame>
         <Button x:Name="button" Content="Güncel Haberler" HorizontalAlignment="Left" Margin="68,4,0,0" VerticalAlignment="Top" Width="120" Grid.Row="1" Height="35" Click="button_Click" Background="#00447C" Foreground="White" FontWeight="ExtraBold"  />
         <Button x:Name="button1" Content="Dünya Haberleri" HorizontalAlignment="Left" Margin="240,4,0,0" VerticalAlignment="Top" Width="120" Grid.Row="1" Height="35" Click="button1_Click" Background="#00447C" Foreground="White"  FontWeight="ExtraBold"/>
         <Button x:Name="button2" Content="Spor Haberleri" HorizontalAlignment="Left" Margin="410,4,0,0" VerticalAlignment="Top" Width="120" Grid.Row="1" Height="35" Click="button2_Click" Background="#00447C" Foreground="White"  FontWeight="ExtraBold"/>
-      
-    </Grid>
+
+</Grid>
 </Window>
