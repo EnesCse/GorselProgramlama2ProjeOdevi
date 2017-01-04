@@ -49,5 +49,7 @@ namespace GorselProgramlama2ProjeOdevi
             this.DataContext = "";
             this.DataContext = veri;
         }
+
+        
     }
 }
